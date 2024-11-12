@@ -242,12 +242,12 @@ public class AplikasiPenghitungDiskonFrame extends javax.swing.JFrame {
         String kodeKupon = TKupon.getText();
         int diskonTambahan = 0;
         if (kodeKupon.equalsIgnoreCase("DISKON10")) {
-            diskonTambahan = 10; // Tambahan 10% diskon
+            diskonTambahan = 10; 
         }
                 
         int totalDiskon = diskon + diskonTambahan;
         if (totalDiskon > 100) {
-            totalDiskon = 100; // Pastikan diskon tidak lebih dari 100%
+            totalDiskon = 100; 
         }
 
         double jumlahDiskon = hargaAsli * totalDiskon / 100;
@@ -256,18 +256,18 @@ public class AplikasiPenghitungDiskonFrame extends javax.swing.JFrame {
         TJHemat.setText(String.valueOf(jumlahDiskon));
         THAkhir.setText(String.valueOf(hargaAkhir));
 
-        // Menambahkan riwayat ke JTextArea
+            
         String riwayat = "No: " + (TARiwayat.getLineCount() + 1) + 
                          " | Kode Kupon: " + kodeKupon +
                          " | Harga Asli: " + hargaAsli +
                          " | Diskon: " + totalDiskon + "%" +
                          " | Harga Akhir: " + hargaAkhir + "\n";
-        TARiwayat.append(riwayat); // Menambahkan riwayat ke JTextArea
+        TARiwayat.append(riwayat); 
 
     } catch (NumberFormatException e) {
         JOptionPane.showMessageDialog(this, "Masukkan angka yang valid.");
     }
-        int diskon = SDiskon.getValue(); // Ambil nilai dari JSlider
+        int diskon = SDiskon.getValue(); 
 
     }//GEN-LAST:event_BHitungActionPerformed
 
