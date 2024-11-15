@@ -1,48 +1,32 @@
-# Aplikasi Perhitungan Diskon
+# Tugas 3: Aplikasi Perhitungan Diskon
 
-## Deskripsi Program
-Aplikasi ini menghitung harga akhir setelah diskon dengan antarmuka pengguna (GUI) sederhana. Pengguna dapat memasukkan harga asli, memilih persentase diskon, dan aplikasi akan menampilkan harga setelah diskon serta jumlah penghematan yang didapatkan.
+**Nabila Parastiwi - 2210010420 - Kelas 5A Reg Pagi Banjarmasin**  
+Mata Kuliah: Pemrograman Berbasis Objek
 
-## Biodata
-- **Nama**: Nabila Parastiwi
-- **NPM**: 2210010420
-- **Kelas**: Reguler 5A Pagi Banjarmasin
-- **Mata Kuliah**: Pemrograman Berbasis Objek 2
-- **Jurusan**: Teknik Informatika - TI
-- **Fakultas**: Teknologi Informatika
-- **Kampus**: Universitas Islam Kalimantan Muhammad Arsyad Al-Banjari
+## Deskripsi
 
-## Fitur Program
-- **Input Harga Asli**: Pengguna memasukkan harga asli produk.
-- **Pemilihan Persentase Diskon**: Pilihan persentase diskon menggunakan JComboBox atau JSlider.
-- **Tombol Hitung**: Mengaktifkan kalkulasi harga akhir setelah diskon.
-- **Riwayat Perhitungan Diskon**: Menyimpan riwayat perhitungan sebelumnya.
-- **Kode Kupon Diskon**: Opsi untuk memasukkan kode kupon tambahan.
+Aplikasi ini digunakan untuk menghitung harga akhir setelah diskon diterapkan berdasarkan harga asli dan persentase diskon yang dipilih.
 
-## Komponen GUI
-- **JFrame**: Jendela utama aplikasi.
-- **JPanel**: Panel untuk mengatur tata letak komponen.
-- **JLabel**: Label untuk deskripsi komponen.
-- **JTextField**: Input harga asli.
-- **JComboBox / JSlider**: Pemilihan persentase diskon.
-- **JButton**: Tombol untuk menghitung diskon.
+## Fitur
 
-## Logika Program
-1. Perhitungan harga akhir berdasarkan persentase diskon yang dipilih.
-2. Penanganan eksepsi untuk input tidak valid.
+- **Penghitungan Diskon**: Menghitung harga akhir dan jumlah penghematan.
+- **Pilihan Persentase Diskon**: Menggunakan JComboBox atau JSlider untuk memilih nilai diskon.
+- **Kode Kupon**: Menyediakan opsi untuk memasukkan kode kupon tambahan.
+- **Riwayat Perhitungan**: Menampilkan riwayat diskon yang sudah dihitung.
+- **Validasi Input**: Memastikan input valid dengan penanganan eksepsi.
 
-## Events
-- **ActionListener**: Untuk tombol "Hitung" yang memproses perhitungan.
-- **ItemListener**: Mengatur perubahan pilihan diskon pada JComboBox atau JSlider.
+## Komponen
 
-## Variasi yang Ditambahkan
-- **Kode Kupon Diskon**: Memungkinkan pengguna menambahkan diskon tambahan.
-- **Riwayat Perhitungan**: Memungkinkan pengguna melihat perhitungan diskon sebelumnya.
+- GUI menggunakan JFrame, JPanel, JLabel, JTextField, JComboBox, JButton, JSlider.
+- Logika program mencakup perhitungan aritmatika dan validasi input.
+- Event Handling:
+  - **ActionListener** untuk tombol "Hitung".
+  - **ItemListener** untuk JComboBox (pemilihan diskon).
 
-## Cara Menggunakan Program
-1. Buka aplikasi.
-2. Masukkan harga asli produk.
-3. Pilih persentase diskon.
-4. Tekan tombol "Hitung" untuk melihat harga setelah diskon dan penghematan.
-5. (Opsional) Masukkan kode kupon untuk diskon tambahan.
-6. Lihat hasil akhir dan riwayat perhitungan yang tersedia.
+## Cara Menjalankan
+
+1. Clone repositori ini ke perangkat Anda.
+2. Jalankan aplikasi dengan memastikan Java Runtime Environment (JRE) telah terinstal.
+3. Masukkan harga asli, pilih persentase diskon, dan tekan tombol "Hitung".
+4. Jika ada kode kupon, masukkan untuk tambahan diskon.
+5. Lihat hasil harga akhir dan jumlah penghematan.
